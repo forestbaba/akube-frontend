@@ -1,0 +1,37 @@
+.parentcard {
+    display: flex;
+    width: 200px;
+    flex-direction: column;
+    border-radius: 25px;
+     box-shadow: 5px 10px 10px 0px #888888;
+     margin-left: 20px;
+    //padding-left: 20px;
+    // background-color: red;
+
+    .details-holder {
+        padding: 10px;
+
+        .price {
+            margin: 0px;
+            font-size: 18px;
+            font-weight: bold;
+
+        }
+        .title{
+            margin: 0px;
+        }
+    }
+
+
+img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    // padding: 20px;
+    background-color: #e3e3e3;
+    height: 230px;
+    width: 200px;
+
+
+
+}
+}

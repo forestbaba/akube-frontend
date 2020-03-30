@@ -1,0 +1,32 @@
+.parent{
+    ul{
+        list-style: none;
+        margin: 0px;
+        padding:0px;
+
+        li{
+            display: block;
+            margin-top: 20px;
+
+
+            .icon-and-item {
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                padding-right: 20px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                height: 40px;
+
+                p {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .title-holder{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
