@@ -1,10 +1,12 @@
 .womenparent{
 
+    // margin: 20px;
 
     .itemholder{
-        background-color: red;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding: 20px;
+        margin-top: 30px;
     }
 }

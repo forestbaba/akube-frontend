@@ -19,6 +19,8 @@ import { ReactComponent as Clothing } from './clothing.svg'
 import { ReactComponent as New } from './new.svg'
 import { ReactComponent as Sport } from './sport.svg'
 import { ReactComponent as Track } from './track.svg'
+import { ReactComponent as Heartoutlined } from './heart-outline.svg'
+import { ReactComponent as Heartfilled } from './heart-filled.svg'
 
 export const StyledSVG = styled(Bed)`
  height: 1rem;
@@ -233,6 +235,29 @@ export const TrackSvg = styled(Track)`
 //  margin: auto;
 `
 export const NewSvg = styled(New)`
+ height: 2rem;
+ width: 1.5rem;
+ display: block;
+ .lines{
+ }
+ margin-left:20px;
+ margin-right:20px;
+
+//  margin: auto;
+`
+export const HeartOutlinedSvg = styled(Heartoutlined)`
+ height: 2rem;
+ width: 1.5rem;
+ display: block;
+ .lines{
+ }
+ margin-left:20px;
+ margin-right:20px;
+
+//  margin: auto;
+`
+
+export const HeartFilledSvg = styled(Heartfilled)`
  height: 2rem;
  width: 1.5rem;
  display: block;
