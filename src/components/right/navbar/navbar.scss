@@ -111,6 +111,15 @@
                         padding-bottom: 5px;
                         height: 40px;
 
+                        -ms-transform: scale(1.0);
+                        /* IE 9 */
+                        -webkit-transform: scale(1.0);
+                        /* Safari 3-8 */
+                        transition: all .5s ease-in-out;
+                        box-shadow: 5px 5px 5px 0px #888888;
+
+                        transform: scale(1.05)
+
                         p {
                             font-weight: bold;
                         }
@@ -136,6 +145,12 @@
                             font-weight: bold;
                         }
                     }
+
+        
+                }
+                li:hover {
+                    cursor: pointer;
+                    
                 }
             }
         }

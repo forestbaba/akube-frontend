@@ -1,42 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './menu-list.scss'
 import { NewSvg, HangerSvg, SportSvg, ClothingSvg, TrackSvg } from '../../../components/icons/styledsvg'
 
+import { useHistory } from 'react-router';
 
 const Menulist = () => {
+
+    
+
+    const [categoryItem, setCategoryItem] = useState([
+        { uid: 1, name: "New in", icon: NewSvg, path: "newin" },
+        { uid: 2, name: "Clothing", icon: HangerSvg, path: 'clothing' },
+        { uid: 3, name: "Shoes", icon: SportSvg, path: 'shoes' },
+        { uid: 4, name: "Accessories", icon: ClothingSvg, path: 'accessories' },
+        { uid: 5, name: "Activewear", icon: TrackSvg, path: 'activewear' }
+    ])
+    const [activelink, setactivelink] = useState(null)
+const history = useHistory()
+
+    const handleClick = id => {
+        setactivelink(id)
+        history.push(`/${categoryItem[id - 1].path}`)
+    }
     return (
         <div className='parent'>
             <ul>
-                <li>
-                    <div className='icon-and-item'>
-                        <NewSvg /><p>New in</p>
-                    </div>
-                </li>
-                <li>
-                    <div className='icon-and-item'>
-                        <HangerSvg /><p>Clothing</p>
-                    </div>
-                </li>
-                <li>
-                    <div className='icon-and-item'>
-                        <SportSvg />
-                        <p>Shoes</p>
-                    </div>
-                </li>
-                <li>
-                    <div className='icon-and-item'>
-                        <ClothingSvg />
-                        <p>Accessories</p>
-                    </div>
-                </li>
-                <li>
-                    <div className='icon-and-item'>
-                        <TrackSvg />
-                        <p>Activewear</p>
-                    </div>
-                </li>
-                {/* <li>Gift and living</li>
-                <li>Inspiration</li> */}
+                {categoryItem.map(item => {
+                    return (<li key={item.uid}
+                        onClick={() => handleClick(item.uid)} >
+                        <div className={
+                        
+                        item.className +
+                            (item.uid === activelink ? " icon-and-item-active" : ' icon-and-item')}>
+                            <item.icon /><p>{item.name}</p>
+                        </div>
+                    </li>)
+                })}
+
             </ul>
         </div>
     )

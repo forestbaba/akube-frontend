@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Women from './components/Screen/Women/women'
 import Men from './components/Screen/Men/men'
 import Navbar from './components/right/navbar/navbar'
+import NewIn from './components/Screen/newin/newin'
 import './components/right/right.scss'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" component={RightSide} exact/>
             <Route path="/women" component={Women} />
             <Route path="/men" component={Men} />
+            <Route path="/newin" component={NewIn} />
           
           </Switch>
         </div>

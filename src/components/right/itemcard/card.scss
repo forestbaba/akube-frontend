@@ -6,31 +6,41 @@
     box-shadow: 3px 3px 3px 0px #888888;
     margin: 10px;
 
-    .backdrop{
+    .backdrop {
         background-color: yellow;
         //background-image: url('./101.jpg');
     }
 
     .heart-holder {
         background-color: whitesmoke;
-        position: fixed;
+        //position: fixed;
         border-radius: 25px;
         display: flex;
         width: 20px;
         height: 25px;
         align-items: center;
         text-align: center;
-        padding-left: 12px;
-        padding-right: 12px;
-        padding-top: 10px;
-        padding-bottom: 8px;
+        margin-top: 30px;
+        //  padding-left: 12px;
+        //padding-right: 12px;
+        // padding-top: 10px;
+        // padding-bottom: 8px;
         // margin-top: 300px;
-         //  right:  30px;
+        //  right:  30px;
     }
-   
+
 
     .details-holder {
-        padding: 10px;
+        // padding: 10px;
+        display: flex;
+        flex-direction: row;
+
+        .desc-holder {
+            flex: 1;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
 
         .price {
             margin: 0px;
@@ -58,14 +68,14 @@
     }
 }
 
- .parentcard:hover {
-     cursor: pointer;
-     -ms-transform: scale(1.0);
-     /* IE 9 */
-     -webkit-transform: scale(1.0);
-     /* Safari 3-8 */
-      transition: all .5s ease-in-out;
-          box-shadow: 5px 5px 5px 0px #888888;
+.parentcard:hover {
+    cursor: pointer;
+    -ms-transform: scale(1.0);
+    /* IE 9 */
+    -webkit-transform: scale(1.0);
+    /* Safari 3-8 */
+    transition: all .5s ease-in-out;
+    box-shadow: 5px 5px 5px 0px #888888;
 
-     transform: scale(1.05)
- }
+    transform: scale(1.05)
+}

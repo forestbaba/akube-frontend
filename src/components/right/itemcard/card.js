@@ -7,16 +7,27 @@ const ItemCard = () => {
 
     return (
         <div className='parentcard'>
-            <div style={{backgroundImage: `url(${Image})`}}>
-            
-            </div>
+            {/* <div style={{
+                backgroundImage: `url(${Image})`,
+                display: 'block',
+                marginLeft: 'auto',
+                marginRight: 'auto',
+                width: '50%',
+                // height: '300px', width: '200px'
+            }}>
+           
+            </div> */}
 
-            <HeartOutlinedSvg className='heart-holder' />
             <img src={Image}></img>
 
             <div className='details-holder'>
-                <p className='title'>Adidas Original </p>
-                <p className='price'>₦ 56,000</p>
+                <div className='desc-holder'>
+                    <p className='title'>Adidas Original </p>
+                    <p className='price'>₦ 56,000</p>
+                </div>
+                
+                <HeartOutlinedSvg className='heart-holder' />
+
             </div>
         </div>
 
